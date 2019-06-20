@@ -29,15 +29,15 @@ public:
         // Construct dummy head
         ListNode dummy{-1};
         dummy.next = head;
-        ListNode* prev_head = &dummy;
+        ListNode* prev_head{&dummy};
 
         // Locate pivot: the first element that is greater than or equal to x
         while (head && head->val < x) {
             head = head->next;
             prev_head = prev_head->next;
         }
-        ListNode* pivot = head;
-        ListNode* prev_pivot = prev_head;
+        ListNode* pivot{head};
+        ListNode* prev_pivot{prev_head};
 
         // Move all following nodes that are less than x before pivot
         while (head) {
