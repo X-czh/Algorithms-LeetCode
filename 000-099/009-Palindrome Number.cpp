@@ -1,3 +1,6 @@
+// Time complexity: O(logn)
+// Space complexity: O(1)
+
 class Solution {
 public:
     bool isPalindrome(int x) {
