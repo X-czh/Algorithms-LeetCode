@@ -2,9 +2,9 @@
 
 [Problem](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/)
 
-## Algorithm
+## Approach: Greedy
 
-We just need to find the largest peak following the smallest valley.
+We just try to buy at the lowest price, and sell at the highest price afterwards.
 
 Time complexity: O(n).
 
