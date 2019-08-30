@@ -16,7 +16,7 @@ private:
         vector<int> intersection;
 
         for (int e : s1) {
-            auto found = find(s2.begin(), s2.end(), e);
+            auto found = s2.find(e);
             if (found != s2.end()) {
                 intersection.push_back(e);
             }
