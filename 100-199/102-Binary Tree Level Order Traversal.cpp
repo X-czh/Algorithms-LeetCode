@@ -10,7 +10,7 @@
  *     TreeNode(int x) : val(x), left(NULL), right(NULL) {}
  * };
  */
-class Solution {
+class Solution1 {
 public:
     vector<vector<int>> levelOrder(TreeNode* root) {
         if (!root) return {};
@@ -27,7 +27,7 @@ public:
             int depth = depth_q.front();
             depth_q.pop();
             
-            if (depth + 1> level_order.size()) {
+            if (depth + 1 > level_order.size()) {
                 level_order.push_back(vector<int>{});
             }
             level_order[depth].push_back(node->val);
@@ -42,6 +42,33 @@ public:
             }
         }
         
+        return level_order;
+    }
+};
+
+class Solution2 {
+public:
+    vector<vector<int>> levelOrder(TreeNode* root) {
+        if (!root) return {};
+
+        vector<vector<int>> level_order;
+        
+        queue<TreeNode*> q;
+        q.push(root);
+        
+        while (!q.empty()) {
+            queue<TreeNode*> temp;
+            vector<int> level;
+            while (!q.empty()) {
+                TreeNode* curr = q.front(); q.pop();
+                level.push_back(curr->val);
+                if (curr->left) temp.push(curr->left);
+                if (curr->right) temp.push(curr->right);
+            }
+            q = temp;
+            level_order.push_back(level);
+        }
+            
         return level_order;
     }
 };
