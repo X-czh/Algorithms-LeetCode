@@ -5,7 +5,7 @@
 ### Tokenize String
 
 ```c++
-vector<string> toTokenizedString(string str)
+vector<string> toTokenVector(string str)
 {
     vector<string> out;
     istringstream tokenStream(str);
