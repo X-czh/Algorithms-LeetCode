@@ -44,7 +44,7 @@ public:
             }
         }
         
-        // toplogical sort
+        // topological sort
         string alien_order;
         queue<char> q;
         for (auto& e : indegree) {
