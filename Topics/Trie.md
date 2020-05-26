@@ -46,8 +46,10 @@ public:
     }
 
     ~TrieNode() {
-        for (auto child : children)
-            delete child;
+        for (auto child : children) {
+            if (child)
+                delete child;
+        }
     }
 
     TrieNode* get(char ch) {
