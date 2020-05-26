@@ -1,8 +1,42 @@
 # Trie (Prefix Tree)
 
-A trie (prefix tree), is a kind of search tree—an ordered tree data structure used to store a dynamic set or associative array where the keys are usually strings. Unlike a binary search tree, no node in the tree stores the key associated with that node; instead, its position in the tree defines the key with which it is associated; i.e., the value of the key is distributed across the structure. All the descendants of a node have a common prefix of the string associated with that node, and the root is associated with the empty string.
+## Overview
+
+A trie (prefix tree) is a search tree tailored for efficient information re**Trie**val. Using Trie, search complexities can be brought to optimal limit (key length). Unlike a binary search tree, no node in the tree stores the key associated with that node; instead, a node stores the letters of an alphabet and the branch path from the root to the node defines the key with which it is associated. All the descendants of a node have a common prefix of the string associated with that node, and the root is associated with the empty string.
 
 ![trie](../img/trie.jpg)
+
+## Complexity Analysis
+
+Let M be the key/prefix length.
+
+* Insert:
+  * Time complexity: O(M)
+  * Space complexity: O(M) to store Trie
+
+* Search:
+  * Time complexity: O(M)
+  * Space complexity: O(1) extra space
+
+* Prefix Search (startsWith):
+  * Time complexity: O(M)
+  * Space complexity: O(1) extra space
+
+## Implementation
+
+### Storage of the children of a node
+
+* Use an array of child pointers
+* Use a linked list of child nodes
+* Use a hash map of child nodes
+
+## Related Problems
+
+* A vairant for the search routine that supports wildcard character: [211-Add and Search Word - Data structure design](./200-299/211-Add%20and%20Search%20Word%20-%20Data%20structure%20design.cpp)
+
+* When the alphabet is simply {0, 1}, it is called a Bitwise Trie: [421-Maximum XOR of Two Numbers in an Array](../400-499/421-Maximum%20XOR%20of%20Two%20Numbers%20in%20an%20Array.md).
+
+## Example: Trie with the lower-case Engligh alphabet
 
 ```c++
 class TrieNode {
