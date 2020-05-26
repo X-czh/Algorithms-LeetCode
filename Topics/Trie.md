@@ -34,7 +34,9 @@ Let M be the key/prefix length.
 
 * A vairant for the search routine that supports wildcard character: [211-Add and Search Word - Data structure design](./200-299/211-Add%20and%20Search%20Word%20-%20Data%20structure%20design.cpp)
 
-* When the alphabet is simply {0, 1}, it is called a Bitwise Trie: [421-Maximum XOR of Two Numbers in an Array](../400-499/421-Maximum%20XOR%20of%20Two%20Numbers%20in%20an%20Array.md).
+* When the alphabet is simply {0, 1}, it is called a **Bitwise Trie**: [421-Maximum XOR of Two Numbers in an Array](../400-499/421-Maximum%20XOR%20of%20Two%20Numbers%20in%20an%20Array.md).
+
+* **Suffix Tree**: [1032-Stream of Characters](../1000-1099/1032-Stream%20of%20Characters.md)
 
 ## Example: Trie with the lower-case Engligh alphabet
 
