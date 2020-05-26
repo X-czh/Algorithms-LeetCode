@@ -10,11 +10,11 @@ The main programming lanaguage I used is C++. I also used Java for some of the p
 
 * [Bit Manipulation](Topics/Bit%20Manipulation.md)
 
-* [Disjoint Set](Topics/Disjoint%20Set.md)
+* [Disjoint Set (Union-Find)](Topics/Disjoint%20Set.md)
 
 * [Linked List](Topics/Linked%20List.md)
 
-* [Trie](Topics/Trie.md)
+* [Trie (Prefix Tree)](Topics/Trie.md)
 
 ### Langauge-specific Practices
 
