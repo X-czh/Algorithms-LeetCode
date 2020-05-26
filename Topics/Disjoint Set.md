@@ -41,16 +41,17 @@ int union(int x, int y)
 To store the rank/size info, we can use either a new array to record that or store the negative rank/size as the parent value of the representative element.
 
 An example of union by rank (use a new array to store rank) is as follows:
+
 ```c++
 int union(int x, int y)
 {
     int xroot = find(x);
     int yroot = find(y);
-    
+
     // x and y are already in the same set
     if (xroot == yroot)
         return;
-    
+
     // x and y are not in same set, so we merge them
     // merge smaller-rank tree into larger-rank tree
     if (rank[xroot] < rank[yroot])
