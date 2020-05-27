@@ -38,6 +38,8 @@ Let M be the key/prefix length.
 
 * **Suffix Tree**: [1032-Stream of Characters](../1000-1099/1032-Stream%20of%20Characters.md).
 
+* Trie used as a map to keep track of the prefix sums: [677-Map Sum Pairs](../600-699/677-Map%20Sum%20Pairs.md).
+
 ## Example: Trie with the lower-case Engligh alphabet
 
 ```c++
