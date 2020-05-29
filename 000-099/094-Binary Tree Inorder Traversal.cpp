@@ -1,19 +1,38 @@
+// Time complexity: O(n)
+// Space complexity: O(n)
+
 /**
  * Definition for a binary tree node.
  * struct TreeNode {
  *     int val;
  *     TreeNode *left;
  *     TreeNode *right;
- *     TreeNode() : val(0), left(nullptr), right(nullptr) {}
- *     TreeNode(int x) : val(x), left(nullptr), right(nullptr) {}
- *     TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right) {}
+ *     TreeNode(int x) : val(x), left(NULL), right(NULL) {}
  * };
  */
 
-// Recursive
-// Time complexity: O(N), N is the number of nodes in the tree.
-// Space complexity: O(N) auxilary space.
+// Recursive Solution 1
 class Solution1 {
+public:
+    vector<int> inorderTraversal(TreeNode* root) {
+        if (!root) return {};
+        
+        vector<int> inorder;
+        
+        auto inorder_left = inorderTraversal(root->left);
+        inorder.insert(inorder.end(), inorder_left.begin(), inorder_left.end());
+        
+        inorder.push_back(root->val);
+        
+        auto inorder_right = inorderTraversal(root->right);
+        inorder.insert(inorder.end(), inorder_right.begin(), inorder_right.end());
+        
+        return inorder;
+    }
+};
+
+// Recursive Solution 2
+class Solution2 {
 public:
     vector<int> inorderTraversal(TreeNode* root) {
         vector<int> result;
@@ -30,25 +49,30 @@ private:
     } 
 };
 
-// Iterative
-// Time complexity: O(N), N is the number of nodes in the tree.
-// Space complexity: O(N) auxilary space.
-class Solution2 {
+// Iterative Solution
+class Solution3 {
 public:
     vector<int> inorderTraversal(TreeNode* root) {
-        vector<int> result;
+        vector<int> inorder;
         stack<TreeNode*> s;
         TreeNode* curr = root;
+        
         while (curr || !s.empty()) {
+            // go left as far as possible
             while (curr) {
                 s.push(curr);
                 curr = curr->left;
             }
+            
+            // add the root
             curr = s.top();
             s.pop();
-            result.push_back(curr->val);
+            inorder.push_back(curr->val);
+
+            // turn right
             curr = curr->right;
         }
-        return result;
+        
+        return inorder;
     }
 };
