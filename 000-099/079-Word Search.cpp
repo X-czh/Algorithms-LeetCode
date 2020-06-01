@@ -1,6 +1,6 @@
 // Backtracking
 // Time complexity: O(N * 4^L), N is number of cells, L is length of word.
-// Space complexity: O(L) auxilary space.
+// Space complexity: O(L) auxiliary space.
 
 class Solution {
 public:

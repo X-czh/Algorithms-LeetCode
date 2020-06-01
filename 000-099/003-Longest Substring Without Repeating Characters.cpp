@@ -26,3 +26,26 @@ public:
         return max_len;
     }
 };
+
+// Number of chars limited: simpler solution 
+class Solution2 {
+public:
+    int lengthOfLongestSubstring(string s) {
+        int ans = 0;
+        int left = 0;
+        int right = 0;
+        unordered_map<char, int> m;
+
+        while (right < s.size()) {
+            m[s[right]]++;
+            while (m[s[right]] > 1) {
+                m[s[left]]--;
+                left++;
+            }
+            ans = max(right - left + 1, ans);
+            right++;
+        }
+        
+        return ans;
+    }
+};
