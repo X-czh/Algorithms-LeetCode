@@ -20,14 +20,18 @@ The main programming lanaguage I used is C++. I also used Java for some of the p
 
 ### Algorithmic Patterns
 
-* [Dynamic Programming](TODO)
+* [Dynamic Programming](Topics/Dynamic%20Programming.md)
 
 ### Specific Algorithms and Techniques
 
 * [K-Sum](Topics/K-Sum.md)
 
+* [K-Palindrome](Topics/K-Palindrome.md)
+
+* [Path-Sum](Topics/Path-Sum.md)
+
 * [Bit Manipulation](Topics/Bit%20Manipulation.md)
 
-### Langauge-specific Practices
+### Language-specific Practices
 
 * [C++ Memo](Topics/C++%20Memo.md)
