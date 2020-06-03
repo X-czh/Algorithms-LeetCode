@@ -18,6 +18,16 @@ vector<string> toTokenVector(string str)
 }
 ```
 
+## Vector
+
+### Swap the contents of two vectors (in constant time!)
+
+```c++
+v1.swap(v2);
+```
+
+Exchanges the contents of the container with those of other. Does not invoke any move, copy, or swap operations on individual elements.
+
 ## Queue
 
 ### Custom comparator for priority queue
