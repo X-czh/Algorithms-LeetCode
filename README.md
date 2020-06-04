@@ -14,9 +14,15 @@ The main programming lanaguage I used is C++. I also used Java for some of the p
 
 * [Graph](Topics/Graph.md)
 
+* [Heap & Priority Queue](Topics/Heap%20&%20Priority%20Queue.md)
+
+* [Monotonic Stack & Queue](Topics/Monotonic%20Stack%20&%20Queue.md)
+
 * [Trie (Prefix Tree)](Topics/Trie.md)
 
 * [Disjoint Set (Union-Find)](Topics/Disjoint%20Set.md)
+
+* [Segment Tree](Topics/Segment%20Tree.md)
 
 ### Algorithmic Patterns
 
