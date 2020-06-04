@@ -10,9 +10,9 @@ A monotonic stack is a stack with its elements ordered monotonically. Specificly
 
 Monotonic stacks are best suited for problems that requires finding the next/previous greater/smaller element in a list of elements. You just iterate through the list and push elements into the stack. The top element in the stack right before the new element is actually pushed into the stack is the next/previous greater/smaller element of the pushed element. The complexity of doing so for each element in the list is **linear**.
 
-* For __**next**__ problem, backwardly iterate through the list and push elements into the stack.
-* For __**previous**__ problem, forwardly iterate through the list.
-* For problems with a __**circular**__ list, iterate through the list twice.
+* For **next** problem, backwardly iterate through the list and push elements into the stack.
+* For **previous** problem, forwardly iterate through the list.
+* For problems with a **circular** list, iterate through the list twice.
 
 ### Implementation
 
