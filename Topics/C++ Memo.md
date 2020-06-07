@@ -53,6 +53,50 @@ for (auto i = list.begin(), e = list.end(); i != e;) {
 }
 ```
 
+## Use User-defined Key-type for Hash-based Containers
+
+To be able to use std::unordered_map (or one of the other unordered associative containers) with a user-defined key-type, you need to define two things:
+
+* A **hash function**: this must be a class that overrides operator() and calculates the hash value given an object of the key-type. One particularly straight-forward way of doing this is to specialize the std::hash template for your key-type.
+
+* A **comparison function for equality**: this is required because the hash cannot rely on the fact that the hash function will always provide a unique hash value for every distinct key (i.e., it needs to be able to deal with collisions), so it needs a way to compare two given keys for an exact match. You can implement this either as a class that overrides operator(), or as a specialization of std::equal, or – easiest of all – by overloading operator==() for your key type (as you did already).
+
+The difficulty with the hash function is that if your key type consists of several members, you will usually have the hash function calculate hash values for the individual members, and then somehow combine them into one hash value for the entire object. A fairly good starting point for a hash function is one that uses bit shifting and bitwise XOR to combine the individual hash values.
+
+To define a hash function for our user-defined key-type T:
+
+* Either define our own hash function for type T:
+
+```c++
+struct my_hash {
+    template <class T>
+    std::size_t operator()(const T& v) const
+    {
+        // ... hash function here ...
+    }
+};
+
+std::unordered_set<T, my_hash> s;
+std::unordered_map<T, int, my_hash> m;
+```
+
+* Or add a specialization of std::hash for type T:
+
+```c++
+namespace std {
+    template<>
+    struct hash<T> {
+        size_t operator()(const T& v) const
+        {
+            // ... hash function here ...
+        }
+    };
+}
+
+std::unordered_set<T> s;
+std::unordered_map<T, int> m;
+```
+
 ## Lambda Expression
 
 ### Lambda capture
