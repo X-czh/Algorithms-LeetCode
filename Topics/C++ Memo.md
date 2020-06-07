@@ -55,6 +55,8 @@ for (auto i = list.begin(), e = list.end(); i != e;) {
 
 ## Use User-defined Key-type for Hash-based Containers
 
+(Mostly copied from [Soonts'](https://stackoverflow.com/users/126995/soonts) and [jogojapan's](https://stackoverflow.com/users/777186/jogojapan) [answer](https://stackoverflow.com/questions/17016175/c-unordered-map-using-a-custom-class-type-as-the-key) on Stack Overflow, many thanks to them!)
+
 To be able to use std::unordered_map (or one of the other unordered associative containers) with a user-defined key-type, you need to define two things:
 
 * A **hash function**: this must be a class that overrides operator() and calculates the hash value given an object of the key-type. One particularly straight-forward way of doing this is to specialize the std::hash template for your key-type.
