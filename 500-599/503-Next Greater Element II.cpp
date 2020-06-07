@@ -1,9 +1,27 @@
+// Brute Force 
+// Time complexity: O(n^2).
+// Space complexity: O(1).
+class Solution1 {
+public:
+    vector<int> nextGreaterElements(vector<int>& nums) {
+        vector<int> res(nums.size(), -1);
+        for (int i = 0; i < nums.size(); i++) {
+            for (int j = 1; j < nums.size(); j++) {
+                if (nums[(i + j) % nums.size()] > nums[i]) {
+                    res[i] = nums[(i + j) % nums.size()];
+                    break;
+                }
+            }
+        }
+        return res;
+    }
+};
+
 // Monotonic Stack
 // Circular List ? Just go over the list twice!
 // Time complexity: O(n).
 // Space complexity: O(n).
-
-class Solution {
+class Solution2 {
 public:
     vector<int> nextGreaterElements(vector<int>& nums) {
         vector<int> ans(nums.size());
