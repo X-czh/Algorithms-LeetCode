@@ -94,3 +94,21 @@ public:
     }
 };
 ```
+
+Further optimized: O(n) time, O(1) space.
+
+```c++
+class Solution {
+public:
+    int rob(vector<int>& nums) {
+        int prev_max = 0;
+        int curr_max = 0;
+        for (int x : nums) {
+            int temp = curr_max;
+            curr_max = max(prev_max + x, curr_max);
+            prev_max = temp;
+        }
+        return curr_max;
+    }
+};
+```
