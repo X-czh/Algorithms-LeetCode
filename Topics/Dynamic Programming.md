@@ -91,6 +91,8 @@ int fib(int n) {
 
 ## Steps for Solving Problems with Dynamic Programming
 
+(Adapted from Chp 3.4, [Algorithms by Jeff Erickson](https://jeffe.cs.illinois.edu/teaching/algorithms/))
+
 ### First, formulate the problem recursively
 
 * What's the **problem, in a exact way**?
