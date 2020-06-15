@@ -2,6 +2,8 @@
 
 [Problem](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/)
 
+At most one transaction.
+
 ## Approach: Greedy
 
 We just try to buy at the lowest price, and sell at the highest price afterwards.
