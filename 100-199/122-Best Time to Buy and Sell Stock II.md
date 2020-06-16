@@ -2,6 +2,8 @@
 
 [Problem](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-ii/)
 
+No limit on number of transactions.
+
 ## Approach: Greedy
 
 The maximum profit is obtained by buying in at each valley and selling out at the peak right after it. It is also equivalent to buy in whenever the price raises the next day, and sold out right the next day.
