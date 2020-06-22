@@ -7,7 +7,7 @@ See its tree-variant: Problem [437](../400-499/437-Path%20Sum%20III.md).
 ## Approach 1: Brute Force
 
 Time complexity: O(n^2).
-a
+
 Space complexity: O(1) extra space.
 
 ```c++
@@ -15,7 +15,7 @@ class Solution {
 public:
     int subarraySum(vector<int>& nums, int k) {
         int N = nums.size();
-        
+
         int res = 0;
         for (int i = 0; i < N; i++) {
             int sum = 0;
@@ -49,7 +49,7 @@ public:
         for (int i = 0; i < nums.size(); i++) {
             sum += nums[i];
             if (m.find(sum - k) != m.end())
-                count += m[sum - k];    
+                count += m[sum - k];
             m[sum]++;
         }
         return count;

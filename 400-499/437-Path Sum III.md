@@ -6,7 +6,7 @@ This a tree-variant of Problem [560](../500-599/560-Subarray%20Sum%20Equals%20K.
 
 ## Approach 1: Brute Force (DFS + BFS)
 
-BFS to iterathe tree, from each node, run DFS to count number of path sums that equals target.
+BFS to iterate tree, from each node, run DFS to count number of path sums that equals target.
 
 Time complexity: O(n^2).
 
@@ -33,19 +33,18 @@ public:
         while (!q.empty()) {
             auto curr = q.front();
             q.pop();
-            count += dfs_count(curr, 0, sum);
+            count += dfs_count(curr, sum);
             if (curr->left) q.push(curr->left);
             if (curr->right) q.push(curr->right);
         }
         return count;
     }
 private:
-    int dfs_count(TreeNode* root, int curr_sum, int sum) {
+    int dfs_count(TreeNode* root, int sum) {
         int count = 0;
-        curr_sum += root->val;
         if (root->val == sum) count++;
-        if (root->left) count += dfs_count(root->left, curr_sum, sum - root->val);
-        if (root->right) count += dfs_count(root->right, curr_sum, sum - root->val);
+        if (root->left) count += dfs_count(root->left, sum - root->val);
+        if (root->right) count += dfs_count(root->right, sum - root->val);
         return count;
     }
 };
@@ -55,7 +54,7 @@ private:
 
 DFS to iterathe tree, but we include a state variable to indicate whether path is started during the recursion. If path has been started, run DFS to count number of path sums that equals target. If not, either continuing skipping the children nodes, or start the path from the children nodes.
 
-This formulation is equivalant to: DFS to iterathe tree, from each node, run DFS to count number of path sums that equals target.
+This formulation is equivalant to: DFS to iterate tree, from each node, run DFS to count number of path sums that equals target.
 
 Time complexity: O(n^2).
 
@@ -88,7 +87,7 @@ private:
 
 ## Approach 2: Hash Map (Prefix Sum)
 
-Key intution: if the difference between two prefix sums = target, then there exist a tree segment between the ending points of the two prefix sums with sum = target.
+Key intuition: if the difference between two prefix sums = target, then there exist a tree segment between the ending points of the two prefix sums with sum = target.
 
 DFS the tree once, store the occurrences of prefix sums in a hash map, for every node i, increment the count by m[prefix_sum(i) - target]. Note that to maintain the prefix sum, every time DFS exits from visiting a node, we should decrement the occurrence of the prefix sum to mark exiting from visiting this node.
 
