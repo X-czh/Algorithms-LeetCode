@@ -70,7 +70,7 @@ int fib(int n) {
 
 ### Bottom-up approach, space optimized: O(n) time, O(1) space
 
-In many dynamic programming algorithms, it is not necessary to retain all intermediate results through the entire computation. Here, we can significantly reduce the space requirements of our algorithm by maintaining only the two newest elements of the array. More generally, if the solution to a problem of size n depends on its f(n) sub-problems, then usually only O(f(n)) auxiliary space is needed by reusing memoization space.
+In many dynamic programming algorithms, it is not necessary to retain all intermediate results through the entire computation. Here, we can significantly reduce the space requirements of our algorithm by maintaining only the two newest elements of the array. More generally, if the solution to a problem of size n depends on its f(n) sub-problems, then at least O(f(n)) auxiliary space is needed by reusing memoization space.
 
 ```c++
 int fib(int n) {
@@ -108,11 +108,9 @@ store the solution to every subproblem you identified. This is usually, but not 
 depends on other subproblems. It's better to draw a picture with arrows between subproblems to represent the dependencies.
 * **Find a good evaluation order**. Order the subproblems so that each one
 comes after the subproblems it depends on. The dependencies you identified in the previous step define a partial order over the subproblems; you need to find a linear extension of that partial order (a.k.a., do topological sorting over the dependency graph).
-* **(Optional) Find possible ways to reuse memoization space**. In many dynamic programming algorithms, it is not necessary to retain all intermediate results through the entire computation. More generally, if the solution to a problem of size n depends on its f(n) sub-problems, then usually only O(f(n)) auxiliary space is needed by reusing memoization space.
+* **(Optional) Find possible ways to reuse memoization space**. In many dynamic programming algorithms, it is not necessary to retain all intermediate results through the entire computation. More generally, if the solution to a problem of size n depends on its f(n) sub-problems, then at least O(f(n)) auxiliary space is needed by reusing memoization space.
 * **Analyze space and running time**. The number of distinct subproblems
 determines the space complexity of your memoized algorithm (without space reusing). To compute the total running time, add up the running times of all possible subproblems, assuming deeper recursive calls are already memoized.
 * **Write down the algorithm**. Finally! Usually a couple of nested loops.
 
-## Dynamic Programming on Trees
-
-## Dynamic Programming in DAGs
+## Representative Problems

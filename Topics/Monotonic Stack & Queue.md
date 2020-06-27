@@ -1,4 +1,4 @@
-# Monotonic Stack/Queue
+# Monotonic Stack & Queue
 
 ## Monotonic Stack
 
