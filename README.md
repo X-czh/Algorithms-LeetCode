@@ -13,6 +13,7 @@ The main programming lanaguage I used is C++. I also used Java for some of the p
 * [Tree](Topics/Tree.md)
 
 * [Graph](Topics/Graph.md)
+  * [Topological Sort](Topics/Topological%20Sort.md)
 
 * [Heap & Priority Queue](Topics/Heap%20&%20Priority%20Queue.md)
 
