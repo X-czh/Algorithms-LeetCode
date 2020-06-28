@@ -8,26 +8,26 @@ The main programming lanaguage I used is C++. I also used Java for some of the p
 
 ### Data Structures
 
-* [Linked List](Topics/Linked%20List.md)
+* [Linked List](Topics/Linked-List.md)
 
 * [Tree](Topics/Tree.md)
 
 * [Graph](Topics/Graph.md)
-  * [Topological Sort](Topics/Topological%20Sort.md)
+  * [Topological Sort](Topics/Topological-Sort.md)
 
-* [Heap & Priority Queue](Topics/Heap%20&%20Priority%20Queue.md)
+* [Heap & Priority Queue](Topics/Heap-&-Priority-Queue.md)
 
-* [Monotonic Stack & Queue](Topics/Monotonic%20Stack%20&%20Queue.md)
+* [Monotonic Stack & Queue](Topics/Monotonic-Stack-&-Queue.md)
 
 * [Trie (Prefix Tree)](Topics/Trie.md)
 
-* [Disjoint Set (Union-Find)](Topics/Disjoint%20Set.md)
+* [Disjoint Set (Union-Find)](Topics/Disjoint-Set.md)
 
-* [Segment Tree](Topics/Segment%20Tree.md)
+* [Segment Tree](Topics/Segment-Tree.md)
 
 ### Algorithmic Patterns
 
-* [Dynamic Programming](Topics/Dynamic%20Programming.md)
+* [Dynamic Programming](Topics/Dynamic-Programming.md)
 
 ### Specific Algorithms and Techniques
 
@@ -37,8 +37,8 @@ The main programming lanaguage I used is C++. I also used Java for some of the p
 
 * [Path-Sum](Topics/Path-Sum.md)
 
-* [Bit Manipulation](Topics/Bit%20Manipulation.md)
+* [Bit Manipulation](Topics/Bit-Manipulation.md)
 
 ### Language-specific Practices
 
-* [C++ Memo](Topics/C++%20Memo.md)
+* [C++ Memo](Topics/C++-Memo.md)
