@@ -22,7 +22,7 @@ for (auto curr = head; curr; curr = curr->next) {
 
 ## Fast and slow pointers
 
-**Example 1:** [876-Middle of the Linked List](../800-899/876-Middle%20of%20the%20Linked%20List.md).
+**Example 1:** [876-Middle of the Linked List](../800-899/876-Middle-of-the-Linked-List.md).
 
 The fast pointer runs twice as fast as the slow pointer. When the fast reaches the end, the slow reaches the middle. Can be extened to one-xth of the linked list.
 
@@ -38,7 +38,7 @@ ListNode* middleNode(ListNode* head) {
 }
 ```
 
-**Example 2:** [141-Linked List Cycle](../100-199/141-Linked%20List%20Cycle.md).
+**Example 2:** [141-Linked List Cycle](../100-199/141-Linked-List-Cycle.md).
 
 The Tortoise and the Hare: the hare will meet the torroise again as the route is cyclic.
 
@@ -59,9 +59,9 @@ bool hasCycle(ListNode *head) {
 }
 ```
 
-Also see [142-Linked List Cycle II](../100-199/141-Linked%20List%20Cycle%20II.md).
+Also see [142-Linked List Cycle II](../100-199/141-Linked-List-Cycle-II.md).
 
-**Example 3:** [160-Intersection of Two Linked Lists](../100-199/160-Intersection%20of%20Two%20Linked%20Lists.md).
+**Example 3:** [160-Intersection of Two Linked Lists](../100-199/160-Intersection-of-Two-Linked-Lists.md).
 
 Two Pointers—Crossover Loop: The trick of this crossover loop is to ensure that the two pointers arrive at the intersection node (if have) the second time at the same time (by that time, both travel the distance of A-only-part + B-only-part + intersection-part). If the two lists have no intersection, then the last nodes of them do not coincide.
 

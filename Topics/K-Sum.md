@@ -4,7 +4,7 @@ Does a given set of N integers contains K elements that sum to a target number?
 
 ## 2-Sum
 
-[001-Two Sum](../000-099/001-Two%20Sum.cpp)
+[001-Two Sum](../000-099/001-Two-Sum.cpp)
 
 ### Appraoch 1: Brute Force
 
@@ -115,8 +115,8 @@ int twoSumClosest(vector<int>& nums, int target) {
 
 ### 2-Sum in BSTs
 
-* [653-Two Sum IV - Input is a BST](../600-699/653-Two%20Sum%20IV%20-%20Input%20is%20a%20BST.md)
-* [1214-Two Sum BSTs](../1200-1299/1214-Two%20Sum%20BSTs.cpp)
+* [653-Two Sum IV - Input is a BST](../600-699/653-Two-Sum-IV---Input-is-a-BST.md)
+* [1214-Two Sum BSTs](../1200-1299/1214-Two-Sum-BSTs.cpp)
 
 ## K-Sum (K > 2)
 
@@ -171,7 +171,7 @@ vector<int> KSum(vector<int>& nums, int target, int K) {
 ### Related Problems
 
 * [015-3Sum](../000-099/015-3Sum.cpp)
-* [016-3Sum Closest](../000-099/016-3Sum%20Closest.cpp)
+* [016-3Sum Closest](../000-099/016-3Sum-Closest.cpp)
 * [018-4Sum](../000-099/018-4Sum.cpp)
-* [259-3Sum Smaller](../200-299/259-3Sum%20Smaller.cpp)
-* [923-3Sum With Multiplicity](../900-999/923-3Sum%20With%20Multiplicity.md)
+* [259-3Sum Smaller](../200-299/259-3Sum-Smaller.cpp)
+* [923-3Sum With Multiplicity](../900-999/923-3Sum-With-Multiplicity.md)

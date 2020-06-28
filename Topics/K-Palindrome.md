@@ -2,9 +2,9 @@
 
 Can a given string be transformed into a palindrome by removing at most k characters from it?
 
-* [125-Valid Palindrome](../100-199/125-Valid%20Palindrome.cpp)
-* [680-Valid Palindrome II](../600-699/680-Valid%20Palindrome%20II.cpp).
-* [1216-Valid Palindrome III](../1200-1299/1216-Valid%20Palindrome%20III.md).
+* [125-Valid Palindrome](../100-199/125-Valid-Palindrome.cpp)
+* [680-Valid Palindrome II](../600-699/680-Valid-Palindrome-II.cpp).
+* [1216-Valid Palindrome III](../1200-1299/1216-Valid-Palindrome-III.md).
 
 ## 0-Palindrome: Two Pointers
 

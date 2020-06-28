@@ -54,10 +54,10 @@ private:
 
 ### Problems
 
-* Basic: [496-Next Greater Element I](../400-499/496-Next%20Greater%20Element%20I.cpp) and [1019-Next Greater Node In Linked List](../1000-1099/1019-Next%20Greater%20Node%20In%20Linked%20List.md).
-* Dealing with circular list: [503-Next Greater Element II](../500-599/503-Next%20Greater%20Element%20II.cpp).
-* Variant: [042-Trapping Rain Water](../000-099/049-Trapping%20Rain%20Water%20.md).
-* Variant: [084-Largest Rectangle in Histogram](../000-099/084-Largest%20Rectangle%20in%20Histogram.md).
+* Basic: [496-Next Greater Element I](../400-499/496-Next-Greater-Element-I.cpp) and [1019-Next Greater Node In Linked List](../1000-1099/1019-Next-Greater-Node-In-Linked-List.md).
+* Dealing with circular list: [503-Next Greater Element II](../500-599/503-Next-Greater-Element-II.cpp).
+* Variant: [042-Trapping Rain Water](../000-099/049-Trapping-Rain-Water-.md).
+* Variant: [084-Largest Rectangle in Histogram](../000-099/084-Largest-Rectangle-in-Histogram.md).
 
 ## Monotonic Queue
 

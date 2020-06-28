@@ -72,8 +72,8 @@ function dfs(node n)
 
 ## Related Problems
 
-* Existence only: [207-Course Schedule](../200-299/207-Course%20Schedule.md)
-* Output ordering: [210-Course Schedule](../200-299/210-Course%20Schedule%20II.md)
-* Output ordering: [269-Alien Dictionary](../200-299/269-Alien%20Dictionary.md)
-* Level of DAG: [1136-Parallel Courses](../1100-1199/1136-Parallel%20Courses.md)
-* Wrong solution with TopSort + Greedy (**A greedy algorithm without proof is simply wrong!**): [1494-Parallel Courses II](../1400-1499/1494-Parallel%20Courses%20II.md)
+* Existence only: [207-Course Schedule](../200-299/207-Course-Schedule.md)
+* Output ordering: [210-Course Schedule](../200-299/210-Course-Schedule-II.md)
+* Output ordering: [269-Alien Dictionary](../200-299/269-Alien-Dictionary.md)
+* Level of DAG: [1136-Parallel Courses](../1100-1199/1136-Parallel-Courses.md)
+* Wrong solution with TopSort + Greedy (**A greedy algorithm without proof is simply wrong!**): [1494-Parallel Courses II](../1400-1499/1494-Parallel-Courses-II.md)
