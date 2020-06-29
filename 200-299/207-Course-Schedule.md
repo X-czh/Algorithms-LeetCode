@@ -97,11 +97,11 @@ private:
         status[v] = ACTIVE;
 
         // for each edge v->w
-        for (int i = 0; i < graph[v].size(); ++i) {
-            int w = graph[v][i];
+        for (int w : graph[v]) {
             if (status[w] == ACTIVE) {
                 return false;
-            } else if (status[w] == NEW) {
+            }
+            if (status[w] == NEW) {
                 if (isAcyclicDFS(w, graph, status) == false) {
                     return false;
                 }
@@ -147,11 +147,11 @@ public:
                     status[v] = ACTIVE;
 
                     // for each edge v->w
-                    for (int j = 0; j < graph[v].size(); ++j) {
-                        int w = graph[v][j];
+                    for (int w : graph[v]) {
                         if (status[w] == ACTIVE) {
                             return false;
-                        } else if (status[w] == NEW) {
+                        }
+                        if (status[w] == NEW) {
                             s.push(w);
                         }
                     }
