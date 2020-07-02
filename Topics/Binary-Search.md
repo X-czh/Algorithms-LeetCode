@@ -6,7 +6,7 @@
 
 > In its simplest form, binary search is used to quickly find a value in a sorted sequence (consider a sequence an ordinary array for now). Binary search maintains a contiguous subsequence of the starting sequence where the target value is surely located. This is called the search space. The search space is initially the entire sequence. At each step, the algorithm compares the median value in the search space to the target value. Based on the comparison and because the sequence is sorted, it can then eliminate half of the search space. By doing this repeatedly, it will eventually be left with a search space consisting of a single element, the target value.
 
-From a more general scope, binary search is a special kind of divide-and-conquer techniques, and Binary Search Trees (BSTs) as well as B+ trees are all based on it.
+From a broader scope, binary search is a special kind of divide-and-conquer techniques, and Binary Search Trees (BSTs) as well as B+ trees are all based on it.
 
 ## Five Basic Variants
 
@@ -189,7 +189,7 @@ int max_lesser(vector<int>& a, int lo, int hi, int key)
 ### Search in Rotated Sorted Array
 
 * [033-Search in Rotated Sorted Array](../000-099/033-Search-in-Rotated-Sorted-Array.md)
-* With duplicates: [081-Search in Rotated Sorted Array II](./000-099/081-Search-in-Rotated-Sorted-Array-II.md)
+* With duplicates: [081-Search in Rotated Sorted Array II](../000-099/081-Search-in-Rotated-Sorted-Array-II.md)
 
 ### Search in 2D Matrix
 
@@ -210,4 +210,4 @@ Exponential search allows for searching through a sorted, unbounded list for a t
 
 ### Other Wild Variants (I don't know how to summarize :)
 
-* [300-Longest Increasing Subsequence](300-Longest-Increasing-Subsequence.md)
+* [300-Longest Increasing Subsequence](../300-399/300-Longest-Increasing-Subsequence.md)
