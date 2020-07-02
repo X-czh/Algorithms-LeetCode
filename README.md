@@ -27,6 +27,9 @@ The main programming lanaguage I used is C++. I also used Java for some of the p
 
 * [Dynamic Programming](Topics/Dynamic-Programming.md)
 
+* [Divide and Conquer](Topics/Divide-and-Conquer.md)
+  * [Binary Search](Topics/Binary-Search.md)
+
 ## Specific Algorithms and Techniques
 
 * [K-Sum](Topics/K-Sum.md)
