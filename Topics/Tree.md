@@ -34,13 +34,13 @@ Iterative:
 vector<int> inorderTraversal(TreeNode* root) {
     vector<int> inorder;
     stack<TreeNode*> s;
-    TreeNode* curr = root;
+    auto curr = root;
 
     while (curr || !s.empty()) {
         // go left as far as possible
         while (curr) {
             s.push(curr);
-            curr = curr->left;eeee
+            curr = curr->left;
         }
 
         // add the root
@@ -91,7 +91,7 @@ vector<int> preorderTraversal(TreeNode* root) {
     s.push(root);
 
     while (!s.empty()) {
-        TreeNode* curr = s.top();
+        auto curr = s.top();
         s.pop();
         preorder.push_back(curr->val);
 
@@ -140,8 +140,9 @@ vector<int> postorderTraversal(TreeNode* root) {
     deque<int> postorder;
     stack<TreeNode*> s;
     s.push(root);
+
     while (!s.empty()) {
-        TreeNode* curr = s.top();
+        auto curr = s.top();
         s.pop();
         postorder.push_front(curr->val);
         if (curr->left) {
@@ -172,15 +173,15 @@ vector<vector<int>> levelOrder(TreeNode* root) {
     q.push(root);
 
     while (!q.empty()) {
-        queue<TreeNode*> temp;
         vector<int> level;
-        while (!q.empty()) {
-            TreeNode* curr = q.front(); q.pop();
+        int level_size = q.size();
+        for (int i = 0; i < level_size; i++)
+            auto curr = q.front();
+            q.pop();
             level.push_back(curr->val);
-            if (curr->left) temp.push(curr->left);
-            if (curr->right) temp.push(curr->right);
+            if (curr->left) q.push(curr->left);
+            if (curr->right) q.push(curr->right);
         }
-        q = temp;
         level_order.push_back(level);
     }
 
