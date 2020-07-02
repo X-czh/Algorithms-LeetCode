@@ -6,7 +6,7 @@
 
 > In its simplest form, binary search is used to quickly find a value in a sorted sequence (consider a sequence an ordinary array for now). Binary search maintains a contiguous subsequence of the starting sequence where the target value is surely located. This is called the search space. The search space is initially the entire sequence. At each step, the algorithm compares the median value in the search space to the target value. Based on the comparison and because the sequence is sorted, it can then eliminate half of the search space. By doing this repeatedly, it will eventually be left with a search space consisting of a single element, the target value.
 
-From a more general score, binary search is a special kind of divide-and-conquer techniques, and Binary Search Trees (BSTs) as well as B+ trees are all based on it.
+From a more general scope, binary search is a special kind of divide-and-conquer techniques, and Binary Search Trees (BSTs) as well as B+ trees are all based on it.
 
 ## Five Basic Variants
 
