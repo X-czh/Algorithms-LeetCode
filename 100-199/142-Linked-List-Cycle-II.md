@@ -14,7 +14,7 @@ From 141, we know we can have one fast ptr, one slow ptr chase each other to det
 
 Now consider the time point when fast ptr A first meets slow ptr B. The path B have gone through, path_B = non_cycle_path + cycle_path_B. The path A have gone through, path_A = non_cycle_path + cycle_path \* N + cycle_path_B, where N is a positive integer. Also, path_A = 2 \* path_B, so cycle_path \* N = non_cycle_path + cycle_path_B, cycle_path \* (N - 1) + (cycle_path - cycle_path_B) = non_cycle_path. Note that (cycle_path - cycle_path_B) is exactly the rest of the the current cycle for A to finish. If we reset B to the head of the list, and move A and B one step at a time together, after non_cycle_path step, both A (after finishing N cycles including the current one) and B will arrive at the begining of the cycle.
 
-![142](https://github.com/X-czh/LeetCode/blob/master/img/142.jpg)
+![142](../img/142.jpg)
 
 Time complexity: O(n).
 

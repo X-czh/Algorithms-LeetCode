@@ -59,7 +59,7 @@ bool hasCycle(ListNode *head) {
 }
 ```
 
-Also see [142-Linked List Cycle II](../100-199/141-Linked-List-Cycle-II.md).
+Also see [142-Linked List Cycle II](../100-199/142-Linked-List-Cycle-II.md).
 
 **Example 3:** [160-Intersection of Two Linked Lists](../100-199/160-Intersection-of-Two-Linked-Lists.md).
 

@@ -71,7 +71,7 @@ Time complexity: O(m + n).
 
 Space complexity: O(1).
 
-![160_1](https://github.com/X-czh/LeetCode/blob/master/img/160_1.jpg)
+![160_1](../img/160_1.jpg)
 
 ```c++
 class Solution {
@@ -98,7 +98,7 @@ Time complexity: O(m + n).
 
 Space complexity: O(1).
 
-![160_2](https://github.com/X-czh/LeetCode/blob/master/img/160_2.jpg)
+![160_2](../img/160_2.jpg)
 
 ```c++
 class Solution {
