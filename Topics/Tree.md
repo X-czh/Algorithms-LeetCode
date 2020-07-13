@@ -4,7 +4,7 @@
 
 ![tree_traveral](../img/tree_traverse.png)
 
-### Inorder (DFS)
+### Inorder (DFS, Binary Tree Only)
 
 Time complexity: O(n).
 
@@ -191,4 +191,5 @@ vector<vector<int>> levelOrder(TreeNode* root) {
 
 ### Vertical Order
 
-## Dynamic Programming On Tree
+* [314-Binary Tree Vertical Order Traversal](../300-399/314-Binary-Tree-Vertical-Order-Traversal.cpp): Order by column then by row, then by left to right.
+* [987-Vertical Order Traversal of a Binary Tree](../900-999/987-Vertical-Order-Traversal-of-a-Binary-Tree.cpp): Order by column, then by row, then by value.
