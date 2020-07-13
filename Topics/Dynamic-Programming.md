@@ -114,3 +114,13 @@ determines the space complexity of your memoized algorithm (without space reusin
 * **Write down the algorithm**. Finally! Usually a couple of nested loops.
 
 ## Representative Problems
+
+* [300-Longest Increasing Subsequence](../300-399/300-Longest-Increasing-Subsequence.md)
+
+### DP on strings
+
+* [072-Edit Distance](../000-099/072-Edit-Distance.md)
+* [010-Regular Expression Matching](../000-099/010-Regular-Expression-Matching.md)
+* [1143-Longest Common Subsequence]()
+
+* [221-Maximal Square](../200-299/221-Maximal-Square.md)

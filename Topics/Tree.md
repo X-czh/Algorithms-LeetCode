@@ -175,7 +175,7 @@ vector<vector<int>> levelOrder(TreeNode* root) {
     while (!q.empty()) {
         vector<int> level;
         int level_size = q.size();
-        for (int i = 0; i < level_size; i++)
+        for (int i = 0; i < level_size; i++) {
             auto curr = q.front();
             q.pop();
             level.push_back(curr->val);
