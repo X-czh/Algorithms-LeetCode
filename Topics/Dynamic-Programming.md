@@ -121,6 +121,8 @@ determines the space complexity of your memoized algorithm (without space reusin
 
 * [072-Edit Distance](../000-099/072-Edit-Distance.md)
 * [010-Regular Expression Matching](../000-099/010-Regular-Expression-Matching.md)
-* [1143-Longest Common Subsequence]()
+* [1143-Longest Common Subsequence](../1000-1999/1143-Longest-Common-Subsequence.md)
+
+### 2D DP
 
 * [221-Maximal Square](../200-299/221-Maximal-Square.md)
