@@ -22,7 +22,7 @@ for (auto curr = head; curr; curr = curr->next) {
 
 ## Fast and slow pointers
 
-**Example 1:** [876-Middle of the Linked List](../800-899/876-Middle-of-the-Linked-List.md).
+**Example 1:** [876-Middle of the Linked List](../800-899/876-Middle-of-the-Linked-Lists.md).
 
 The fast pointer runs twice as fast as the slow pointer. When the fast reaches the end, the slow reaches the middle. Can be extened to one-xth of the linked list.
 
